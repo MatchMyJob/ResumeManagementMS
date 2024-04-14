@@ -9,5 +9,7 @@ namespace Domain.Entities
     {
         public required int SkillId {get; set;}
         public required string Name {get; set;}   
+
+        public required IList<ResumeSkill> ResumeSkills {get; set;}
     }
 }

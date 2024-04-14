@@ -12,5 +12,9 @@ namespace Domain.Entities
        public required string Description { get; set; }
        public int MinimunSalary { get; set; }
        public string? Image {get; set;}
+
+       public required IList<Experience> ExperienceList { get; set; }
+       public required IList<Study> StudyList { get; set; }
+       public required IList<ResumeSkill> ResumeSkills { get; set; }
     }
 }
