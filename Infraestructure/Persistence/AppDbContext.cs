@@ -19,7 +19,65 @@ namespace Infraestructure.Persistence
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new UserConfig());
+            modelBuilder.Entity<Resume>(entity =>
+                {
+                    entity.ToTable("Resume");
+                    entity.HasKey(e => e.ResumeId);
+                    entity.Property(e => e.ResumeId).ValueGeneratedOnAdd();
+                });
+
+            modelBuilder.Entity<Skill>(entity =>
+                {
+                    entity.ToTable("Skill");
+                    entity.HasKey(e => e.SkillId);
+                    entity.Property(e => e.SkillId).ValueGeneratedOnAdd();
+                });
+
+            modelBuilder.Entity<StudyType>(entity =>
+                {
+                    entity.ToTable("StudyType");
+                    entity.HasKey(e => e.StudyTypeId);
+                    entity.Property(e => e.StudyTypeId).ValueGeneratedOnAdd();
+                });
+
+            modelBuilder.Entity<Experience>(entity =>
+                {
+                    entity.ToTable("Experience");
+                    entity.HasKey(e => e.ExperienceId);
+                    entity.Property(e => e.ExperienceId).ValueGeneratedOnAdd();
+                    entity.HasOne<Resume>(e => e.Resume)
+                    .WithMany(e => e.ExperienceList)
+                    .HasForeignKey(e => e.ResumeId);
+                });
+
+            modelBuilder.Entity<Study>(entity =>
+                {
+                    entity.ToTable("Study");
+                    entity.HasKey(e => e.StudyId);
+                    entity.Property(e => e.StudyId).ValueGeneratedOnAdd();
+                    
+                    entity.HasOne<Resume>(e => e.Resume)
+                    .WithMany(e => e.StudyList)
+                    .HasForeignKey(e => e.ResumeId);
+
+                    entity.HasOne<StudyType>(e => e.StudyType)
+                    .WithMany(e => e.StudyList)
+                    .HasForeignKey(e => e.StudyTypeId);
+                });
+
+            modelBuilder.Entity<ResumeSkill>(entity =>
+                {
+                    entity.ToTable("ResumeSkill");
+                    entity.HasKey(e => new { e.ResumeId , e.SkillId });
+
+                    entity.HasOne<Resume>(e => e.Resume)
+                    .WithMany(e => e.ResumeSkills)
+                    .HasForeignKey(e => e.ResumeId);
+
+                    entity.HasOne<Skill>(e => e.Skill)
+                    .WithMany(e => e.ResumeSkills)
+                    .HasForeignKey(e => e.SkillId);
+                });
         }
     }
 }
