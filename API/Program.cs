@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
+using Infraestructure.Querys;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -45,6 +46,9 @@ builder.Services.AddScoped<IResumeCommand , ResumeCommand>();
 builder.Services.AddScoped<IResumeService , ResumeService>();
 builder.Services.AddScoped<IExperienceCommand , ExperienceCommand>();
 builder.Services.AddScoped<IExperienceService , ExperienceService>();
+builder.Services.AddScoped<IStudyTypeQuery , StudyTypeQuery>();
+builder.Services.AddScoped<IStudyCommand , StudyCommand>();
+builder.Services.AddScoped<IStudyService , StudyService>();
 
 
 
