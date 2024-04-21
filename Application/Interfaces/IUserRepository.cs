@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using System.Web.Providers.Entities;
 
 namespace Application.Interfaces
 {

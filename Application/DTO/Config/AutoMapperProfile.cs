@@ -3,6 +3,7 @@ using Application.DTO.Request;
 using Application.DTO.Response;
 using AutoMapper;
 using Domain.Entities;
+using System.Web.Providers.Entities;
 
 namespace Application.DTO.Config
 {

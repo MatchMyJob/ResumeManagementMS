@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/API/API.csproj": {}
+    "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\API\\API.csproj": {}
   },
   "projects": {
-    "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/API/API.csproj": {
+    "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/API/API.csproj",
+        "projectUniqueName": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/API/API.csproj",
-        "packagesPath": "/home/juan/.nuget/packages/",
-        "outputPath": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/API/obj/",
+        "projectPath": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Gaston-pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/juan/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Gaston-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Infraestructure/Infraestructure.csproj": {
-                "projectPath": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Infraestructure/Infraestructure.csproj"
+              "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Infraestructure\\Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Infraestructure\\Infraestructure.csproj"
               }
             }
           }
@@ -89,34 +91,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Application/Application.csproj": {
+    "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Application/Application.csproj",
+        "projectUniqueName": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Application/Application.csproj",
-        "packagesPath": "/home/juan/.nuget/packages/",
-        "outputPath": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Application/obj/",
+        "projectPath": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\Gaston-pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/juan/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Gaston-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Domain/Domain.csproj": {
-                "projectPath": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Domain/Domain.csproj"
+              "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Domain\\Domain.csproj"
               }
             }
           }
@@ -143,6 +147,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNet.Providers.Core": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             },
             "Microsoft.AspNet.WebApi.Core": {
               "target": "Package",
@@ -181,26 +189,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Domain/Domain.csproj": {
+    "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Domain/Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Domain/Domain.csproj",
-        "packagesPath": "/home/juan/.nuget/packages/",
-        "outputPath": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Domain/obj/",
+        "projectPath": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Gaston-pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/juan/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Gaston-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -239,34 +249,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Infraestructure/Infraestructure.csproj": {
+    "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Infraestructure\\Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Infraestructure/Infraestructure.csproj",
+        "projectUniqueName": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Infraestructure\\Infraestructure.csproj",
         "projectName": "Infraestructure",
-        "projectPath": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Infraestructure/Infraestructure.csproj",
-        "packagesPath": "/home/juan/.nuget/packages/",
-        "outputPath": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Infraestructure/obj/",
+        "projectPath": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Infraestructure\\Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\Gaston-pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/juan/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Gaston-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Application/Application.csproj": {
-                "projectPath": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Application/Application.csproj"
+              "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Application\\Application.csproj"
               }
             }
           }
@@ -327,7 +339,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

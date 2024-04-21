@@ -2,7 +2,7 @@ using Application.DTO.Config;
 using Application.Interfaces;
 using Application.UseCase.Services;
 using Infraestructure.Persistence;
-using Infraestructure.Repositories;
+//using Infraestructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -58,8 +58,8 @@ builder.Services.AddCors(options =>
 });
 
 
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IUserService, UserService>();
+//builder.Services.AddScoped<IUserRepository, UserRepository>();
+//builder.Services.AddScoped<IUserService, UserService>();
 
 var config = new AutoMapper.MapperConfiguration(
     options =>

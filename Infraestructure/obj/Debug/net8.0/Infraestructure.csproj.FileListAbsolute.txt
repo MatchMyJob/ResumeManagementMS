@@ -57,3 +57,23 @@ D:/Ingeniería Informatica/1 - Proyecto de Software/Proyecto integrador/APITempl
 /home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Infraestructure/obj/Debug/net8.0/Infraest.B0D41582.Up2Date
 /home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Infraestructure/obj/Debug/net8.0/Infraestructure.genruntimeconfig.cache
 /home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Infraestructure/obj/Debug/net8.0/ref/Infraestructure.dll
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\obj\Debug\net8.0\Infraestructure.csproj.AssemblyReference.cache
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\obj\Debug\net8.0\Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\obj\Debug\net8.0\Infraestructure.AssemblyInfoInputs.cache
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\obj\Debug\net8.0\Infraestructure.AssemblyInfo.cs
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\obj\Debug\net8.0\Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\obj\Debug\net8.0\Infraestructure.sourcelink.json
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\obj\Debug\net8.0\Infraestructure.dll
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\obj\Debug\net8.0\refint\Infraestructure.dll
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\obj\Debug\net8.0\Infraestructure.pdb
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\bin\Debug\net8.0\Infraestructure.deps.json
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\bin\Debug\net8.0\Infraestructure.runtimeconfig.json
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\bin\Debug\net8.0\Infraestructure.dll
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\bin\Debug\net8.0\Infraestructure.pdb
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\bin\Debug\net8.0\Application.dll
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\bin\Debug\net8.0\Domain.dll
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\bin\Debug\net8.0\Application.pdb
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\bin\Debug\net8.0\Domain.pdb
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\obj\Debug\net8.0\Infraest.B0D41582.Up2Date
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\obj\Debug\net8.0\Infraestructure.genruntimeconfig.cache
+C:\Users\Gaston-pc\Desktop\reposPS\ResumeManagementMS\Infraestructure\obj\Debug\net8.0\ref\Infraestructure.dll

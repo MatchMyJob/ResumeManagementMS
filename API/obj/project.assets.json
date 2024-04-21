@@ -75,6 +75,25 @@
           }
         }
       },
+      "EntityFramework/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -84,6 +103,22 @@
         },
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.Providers.Core/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.0.0"
+        },
+        "compile": {
+          "lib/net40/System.Web.Providers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/System.Web.Providers.dll": {
             "related": ".xml"
           }
         }
@@ -1729,6 +1764,7 @@
           "AutoMapper": "13.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Domain": "1.0.0",
+          "Microsoft.AspNet.Providers.Core": "2.0.0",
           "Microsoft.AspNet.WebApi.Core": "5.3.0",
           "Microsoft.AspNetCore.JsonPatch": "8.0.3",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "8.0.3",
@@ -1842,6 +1878,36 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
+    "EntityFramework/6.0.0": {
+      "sha512": "y6lX/VMghGBV6TvgQS4Q2WK6kAcOoyD+TQxObN9utd0JsMMdMxyqARxKbvgi7KEIbQ8osZ4ZvImaly7l3NDFDw==",
+      "type": "package",
+      "path": "entityframework/6.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/App.config.transform",
+        "Content/Web.config.transform",
+        "entityframework.6.0.0.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "tools/EntityFramework.PowerShell.Utility.dll",
+        "tools/EntityFramework.PowerShell.dll",
+        "tools/EntityFramework.psd1",
+        "tools/EntityFramework.psm1",
+        "tools/about_EntityFramework.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/migrate.exe"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -1858,6 +1924,20 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Microsoft.AspNet.Providers.Core/2.0.0": {
+      "sha512": "JMk31PExMANVDc04aSUyIlcL3pkFVyNg/dDn+ZZzmhZ2CBctI90BWQH1L0zXgD61ZWW5r4ybInV362sRKWIC+A==",
+      "type": "package",
+      "path": "microsoft.aspnet.providers.core/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ReadMe.txt",
+        "lib/net40/System.Web.Providers.dll",
+        "lib/net40/System.Web.Providers.xml",
+        "microsoft.aspnet.providers.core.2.0.0.nupkg.sha512",
+        "microsoft.aspnet.providers.core.nuspec"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/6.0.0": {
@@ -4858,32 +4938,34 @@
     ]
   },
   "packageFolders": {
-    "/home/juan/.nuget/packages/": {}
+    "C:\\Users\\Gaston-pc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/API/API.csproj",
+      "projectUniqueName": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/API/API.csproj",
-      "packagesPath": "/home/juan/.nuget/packages/",
-      "outputPath": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/API/obj/",
+      "projectPath": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\Gaston-pc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/juan/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Gaston-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Infraestructure/Infraestructure.csproj": {
-              "projectPath": "/home/juan/Documentos/Material de la UNAJ/Proyecto software/2024/Proyecto Grupal/APITemplate/APITemplate/Infraestructure/Infraestructure.csproj"
+            "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Infraestructure\\Infraestructure.csproj": {
+              "projectPath": "C:\\Users\\Gaston-pc\\Desktop\\reposPS\\ResumeManagementMS\\Infraestructure\\Infraestructure.csproj"
             }
           }
         }
@@ -4945,7 +5027,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -4956,6 +5038,26 @@
       "warningLevel": 1,
       "message": "Se detectó una versión del paquete fuera de la restricción de dependencia: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requiere AutoMapper (= 12.0.1), pero la versión AutoMapper 13.0.1 ya se resolvió.",
       "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"EntityFramework 6.0.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "EntityFramework",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.AspNet.Providers.Core 2.0.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Microsoft.AspNet.Providers.Core",
       "targetGraphs": [
         "net8.0"
       ]
