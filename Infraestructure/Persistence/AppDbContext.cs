@@ -30,14 +30,36 @@ namespace Infraestructure.Persistence
                 {
                     entity.ToTable("Skill");
                     entity.HasKey(e => e.SkillId);
-                    entity.Property(e => e.SkillId).ValueGeneratedOnAdd();
+                    entity.Property(e => e.SkillId);
+                    entity.HasData(
+                        new Skill{
+                            SkillId = 1,
+                            Name = "Java",
+                        },
+
+                        new Skill{
+                            SkillId = 2,
+                            Name = "Javascript",
+                        }
+                    );
                 });
 
             modelBuilder.Entity<StudyType>(entity =>
                 {
                     entity.ToTable("StudyType");
                     entity.HasKey(e => e.StudyTypeId);
-                    entity.Property(e => e.StudyTypeId).ValueGeneratedOnAdd();
+                    entity.Property(e => e.StudyTypeId);
+                    entity.HasData(
+                        new StudyType{
+                            StudyTypeId = 1,
+                            Name = "Secundaria basica"
+                        },
+
+                        new StudyType{
+                            StudyTypeId = 2,
+                            Name = "Secundaria superior"
+                        }
+                    );
                 });
 
             modelBuilder.Entity<Experience>(entity =>
