@@ -1,8 +1,8 @@
-using Application.DTO.Config;
+//using Application.DTO.Config;
 using Application.Interfaces;
 using Application.UseCase.Services;
 using Infraestructure.Persistence;
-using Infraestructure.Repositories;
+using Infraestructure.Commands;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -41,6 +41,12 @@ var connectionString = builder.Configuration["ConnectionString"];
 
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connectionString));
 
+builder.Services.AddScoped<IResumeCommand , ResumeCommand>();
+builder.Services.AddScoped<IResumeService , ResumeService>();
+builder.Services.AddScoped<IExperienceCommand , ExperienceCommand>();
+builder.Services.AddScoped<IExperienceService , ExperienceService>();
+
+
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
@@ -58,17 +64,17 @@ builder.Services.AddCors(options =>
 });
 
 
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IUserService, UserService>();
+//builder.Services.AddScoped<IUserRepository, UserRepository>();
+//builder.Services.AddScoped<IUserService, UserService>();
 
-var config = new AutoMapper.MapperConfiguration(
+/*var config = new AutoMapper.MapperConfiguration(
     options =>
     {
         options.AllowNullDestinationValues = true;
         options.AllowNullCollections = true;
         options.AddProfile(new AutoMapperProfile());
     });
-builder.Services.AddSingleton(config.CreateMapper());
+builder.Services.AddSingleton(config.CreateMapper());*/
 
 var app = builder.Build();
 

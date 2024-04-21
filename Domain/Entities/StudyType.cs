@@ -8,7 +8,7 @@ namespace Domain.Entities
     public class StudyType
     {
         public int StudyTypeId {get; set;}
-        public required string Name {get; set;}  
+        public string Name {get; set;}  
 
         public IList<Study> StudyList {get; set;}  
     }

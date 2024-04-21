@@ -7,15 +7,15 @@ namespace Domain.Entities
 {
     public class Study
     {
-        public required int StudyId {get; set;}
-        public required string Description {get; set;}
-        public required DateTime StartDate {get; set;}
-        public required DateTime EndDate {get; set;}
+        public int StudyId {get; set;}
+        public string Description {get; set;}
+        public DateTime StartDate {get; set;}
+        public DateTime EndDate {get; set;}
 
-        public required int ResumeId {get; set;}
-        public required Resume Resume {get; set;}
+        public int ResumeId {get; set;}
+        public  Resume Resume {get; set;}
 
-        public required int StudyTypeId {get; set;}
-        public required StudyType StudyType {get; set;}
+        public  int StudyTypeId {get; set;}
+        public  StudyType StudyType {get; set;}
     }
 }
