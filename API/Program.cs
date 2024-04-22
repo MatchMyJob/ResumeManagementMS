@@ -44,6 +44,7 @@ builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connectionSt
 
 builder.Services.AddScoped<IResumeCommand , ResumeCommand>();
 builder.Services.AddScoped<IResumeService , ResumeService>();
+builder.Services.AddScoped<IResumeQuery , ResumeQuery>();
 builder.Services.AddScoped<IExperienceCommand , ExperienceCommand>();
 builder.Services.AddScoped<IExperienceService , ExperienceService>();
 builder.Services.AddScoped<IStudyTypeQuery , StudyTypeQuery>();
