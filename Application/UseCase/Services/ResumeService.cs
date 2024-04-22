@@ -11,10 +11,12 @@ namespace Application.UseCase.Services
     public class ResumeService : IResumeService
     {
         private readonly IResumeCommand _command;
+        private readonly IResumeQuery _query;
 
-        public ResumeService(IResumeCommand command)
+        public ResumeService(IResumeCommand command , IResumeQuery query) 
         {
             _command = command;
+            _query = query;
         }
 
         public async Task<ResumeResponse> CreateResume(ResumeDTO resumeDTO)
@@ -42,7 +44,14 @@ namespace Application.UseCase.Services
 
         public Task<ResumeResponse> GetResumeByID(int resumeId)
         {
-            throw new NotImplementedException();
+            var resume = _query.GetResume(resumeId);
+            return Task.FromResult(new ResumeResponse{
+                ResumeId = resume.ResumeId,
+                UserId = resume.UserId,
+                Description = resume.Description,
+                MinimunSalary = resume.MinimunSalary,
+                Image = resume.Image
+            });
         }
     }
 }
