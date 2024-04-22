@@ -17,9 +17,10 @@ namespace Application.UseCase.Services
             _command = command;
         }
 
-        public async Task<Experience> CreateExperience(ExperienceDTO experienceDTO)
+        public async Task<ExperienceResponse> CreateExperience(ExperienceDTO experienceDTO)
         {
             var experience = new Experience{
+                ResumeId = experienceDTO.resumeId,
                 CompanyName = experienceDTO.CompanyName,
                 JobTitle = experienceDTO.JobTitle,
                 Description = experienceDTO.Description,
@@ -27,7 +28,14 @@ namespace Application.UseCase.Services
                 EndDate = experienceDTO.EndDate,    
             };
             await _command.InsertExperience(experience);
-            return experience;
+            return new ExperienceResponse{
+                ExperienceId = experience.ExperienceId,
+                CompanyName = experience.CompanyName,
+                JobTitle = experience.JobTitle,
+                Description = experience.Description,
+                StartDate = experience.StartDate,
+                EndDate = experience.EndDate
+            };
         }
     }
 }

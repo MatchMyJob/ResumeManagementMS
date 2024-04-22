@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Domain.Entities;
-using Application.DTO;
 
 namespace Application.Interfaces
 {
-    public interface IExperienceService
+    public interface IResumeQuery
     {
-        Task<ExperienceResponse> CreateExperience(ExperienceDTO experienceDTO);   
+        Resume GetResume(int resumeId);
     }
 }

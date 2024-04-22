@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace Application.DTO
 {
-    public class ExperienceDTO
+    public class ExperienceResponse
     {
-        public int resumeId{get; set;}
+        public int ExperienceId { get; set; }
         public string CompanyName { get; set; }
         public string JobTitle { get; set; }
         public string Description { get; set; }

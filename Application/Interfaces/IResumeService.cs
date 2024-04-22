@@ -9,6 +9,7 @@ namespace Application.Interfaces
 {
     public interface IResumeService
     {
-        Task<Resume> CreateResume(ResumeDTO resumeDTO);
+        Task<ResumeResponse> CreateResume(ResumeDTO resumeDTO);
+        Task<ResumeResponse> GetResumeByID(int resumeId);
     }
 }
