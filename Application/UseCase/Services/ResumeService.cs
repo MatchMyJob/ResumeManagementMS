@@ -36,12 +36,6 @@ namespace Application.UseCase.Services
                 Image = resume.Image
             };
         }
-
-        Task<ResumeResponse> IResumeService.CreateResume(ResumeDTO resumeDTO)
-        {
-            throw new NotImplementedException();
-        }
-
         public Task<ResumeResponse> GetResumeByID(int resumeId)
         {
             var resume = _query.GetResume(resumeId);
