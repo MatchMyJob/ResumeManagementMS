@@ -1,5 +1,5 @@
 ﻿using Application.DTO.Error;
-using Application.DTO.Request;
+using Application.DTO;
 using Application.DTO.Response;
 using AutoMapper;
 using Domain.Entities;
