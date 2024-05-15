@@ -289,13 +289,13 @@ namespace Infraestructure.Persistence
 
                         new StudyType
                         {
-                            StudyTypeId = 2,
+                            StudyTypeId = 3,
                             Name = "Terciario"
                         },
 
                         new StudyType
                         {
-                            StudyTypeId = 2,
+                            StudyTypeId = 4,
                             Name = "Universitario"
                         }
                     );

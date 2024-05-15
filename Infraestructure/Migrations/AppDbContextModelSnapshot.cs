@@ -125,6 +125,196 @@ namespace Infraestructure.Migrations
                         {
                             SkillId = 2,
                             Name = "Javascript"
+                        },
+                        new
+                        {
+                            SkillId = 3,
+                            Name = "C#"
+                        },
+                        new
+                        {
+                            SkillId = 4,
+                            Name = "Python"
+                        },
+                        new
+                        {
+                            SkillId = 5,
+                            Name = "Ruby"
+                        },
+                        new
+                        {
+                            SkillId = 6,
+                            Name = "PHP"
+                        },
+                        new
+                        {
+                            SkillId = 7,
+                            Name = "Swift"
+                        },
+                        new
+                        {
+                            SkillId = 8,
+                            Name = "Go"
+                        },
+                        new
+                        {
+                            SkillId = 9,
+                            Name = "Rust"
+                        },
+                        new
+                        {
+                            SkillId = 10,
+                            Name = "Kotlin"
+                        },
+                        new
+                        {
+                            SkillId = 11,
+                            Name = "TypeScript"
+                        },
+                        new
+                        {
+                            SkillId = 12,
+                            Name = "C++"
+                        },
+                        new
+                        {
+                            SkillId = 13,
+                            Name = "Scala"
+                        },
+                        new
+                        {
+                            SkillId = 14,
+                            Name = "Perl"
+                        },
+                        new
+                        {
+                            SkillId = 15,
+                            Name = "R"
+                        },
+                        new
+                        {
+                            SkillId = 16,
+                            Name = "MATLAB"
+                        },
+                        new
+                        {
+                            SkillId = 17,
+                            Name = "Haskell"
+                        },
+                        new
+                        {
+                            SkillId = 18,
+                            Name = "Cobol"
+                        },
+                        new
+                        {
+                            SkillId = 19,
+                            Name = "Lisp"
+                        },
+                        new
+                        {
+                            SkillId = 20,
+                            Name = "Prolog"
+                        },
+                        new
+                        {
+                            SkillId = 21,
+                            Name = "Ada"
+                        },
+                        new
+                        {
+                            SkillId = 22,
+                            Name = "Fortran"
+                        },
+                        new
+                        {
+                            SkillId = 23,
+                            Name = "Assembly (x86, ARM)"
+                        },
+                        new
+                        {
+                            SkillId = 24,
+                            Name = ".NET"
+                        },
+                        new
+                        {
+                            SkillId = 25,
+                            Name = "Spring"
+                        },
+                        new
+                        {
+                            SkillId = 26,
+                            Name = "Django"
+                        },
+                        new
+                        {
+                            SkillId = 27,
+                            Name = "React"
+                        },
+                        new
+                        {
+                            SkillId = 28,
+                            Name = "Angular"
+                        },
+                        new
+                        {
+                            SkillId = 29,
+                            Name = "Vue.js"
+                        },
+                        new
+                        {
+                            SkillId = 30,
+                            Name = "Node.js"
+                        },
+                        new
+                        {
+                            SkillId = 31,
+                            Name = "Express.js"
+                        },
+                        new
+                        {
+                            SkillId = 32,
+                            Name = "Flask"
+                        },
+                        new
+                        {
+                            SkillId = 33,
+                            Name = "Ruby on Rails"
+                        },
+                        new
+                        {
+                            SkillId = 34,
+                            Name = "Laravel"
+                        },
+                        new
+                        {
+                            SkillId = 35,
+                            Name = "Symfony"
+                        },
+                        new
+                        {
+                            SkillId = 36,
+                            Name = "Hibernate"
+                        },
+                        new
+                        {
+                            SkillId = 37,
+                            Name = "Xamarin"
+                        },
+                        new
+                        {
+                            SkillId = 38,
+                            Name = "Unity"
+                        },
+                        new
+                        {
+                            SkillId = 39,
+                            Name = "TensorFlow"
+                        },
+                        new
+                        {
+                            SkillId = 40,
+                            Name = "PyTorch"
                         });
                 });
 
@@ -187,6 +377,16 @@ namespace Infraestructure.Migrations
                         {
                             StudyTypeId = 2,
                             Name = "Secundaria superior"
+                        },
+                        new
+                        {
+                            StudyTypeId = 3,
+                            Name = "Terciario"
+                        },
+                        new
+                        {
+                            StudyTypeId = 4,
+                            Name = "Universitario"
                         });
                 });
 

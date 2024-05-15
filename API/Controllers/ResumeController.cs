@@ -24,5 +24,11 @@ namespace API.Controllers
             var result = await _service.CreateResume(resumeRequest);
             return new JsonResult(result) {StatusCode = 201};
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id){
+            var result = await _service.GetResumeByID(id);
+            return new JsonResult(result);
+        }
     }
 }

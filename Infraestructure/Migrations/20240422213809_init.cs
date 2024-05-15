@@ -138,7 +138,45 @@ namespace Infraestructure.Migrations
                 values: new object[,]
                 {
                     { 1, "Java" },
-                    { 2, "Javascript" }
+                    { 2, "Javascript" },
+                    { 3, "C#" },
+                    { 4, "Python" },
+                    { 5, "Ruby" },
+                    { 6, "PHP" },
+                    { 7, "Swift" },
+                    { 8, "Go" },
+                    { 9, "Rust" },
+                    { 10, "Kotlin" },
+                    { 11, "TypeScript" },
+                    { 12, "C++" },
+                    { 13, "Scala" },
+                    { 14, "Perl" },
+                    { 15, "R" },
+                    { 16, "MATLAB" },
+                    { 17, "Haskell" },
+                    { 18, "Cobol" },
+                    { 19, "Lisp" },
+                    { 20, "Prolog" },
+                    { 21, "Ada" },
+                    { 22, "Fortran" },
+                    { 23, "Assembly (x86, ARM)" },
+                    { 24, ".NET" },
+                    { 25, "Spring" },
+                    { 26, "Django" },
+                    { 27, "React" },
+                    { 28, "Angular" },
+                    { 29, "Vue.js" },
+                    { 30, "Node.js" },
+                    { 31, "Express.js" },
+                    { 32, "Flask" },
+                    { 33, "Ruby on Rails" },
+                    { 34, "Laravel" },
+                    { 35, "Symfony" },
+                    { 36, "Hibernate" },
+                    { 37, "Xamarin" },
+                    { 38, "Unity" },
+                    { 39, "TensorFlow" },
+                    { 40, "PyTorch" }
                 });
 
             migrationBuilder.InsertData(
@@ -147,7 +185,9 @@ namespace Infraestructure.Migrations
                 values: new object[,]
                 {
                     { 1, "Secundaria basica" },
-                    { 2, "Secundaria superior" }
+                    { 2, "Secundaria superior" },
+                    { 3, "Terciario" },
+                    { 4, "Universitario" }
                 });
 
             migrationBuilder.CreateIndex(

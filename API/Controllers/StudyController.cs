@@ -21,7 +21,7 @@ namespace API.Controllers
 
         [HttpPost]
         public async Task<IActionResult> StudyPost(StudyDTO studyRequest){
-            var result = _service.CreateStudy(studyRequest);
+            var result = await _service.CreateStudy(studyRequest);
             return new JsonResult(result) {StatusCode = 201};
         }
     }
