@@ -6,9 +6,8 @@ using Domain.Entities;
 
 namespace Application.Interfaces
 {
-    public interface IStudyCommand
+    public interface IStudyQuery
     {
-        Task InsertStudy(Study study);
-        Task DeleteStudy(Study study);
+        Task<Study> GetStudy(int studyId);
     }
 }

@@ -11,12 +11,14 @@ namespace Application.UseCase.Services
     public class StudyService : IStudyService
     {
         public readonly IStudyCommand _command;
+        public readonly IStudyQuery _query;
         public readonly IStudyTypeQuery _studyTypeQuery;
 
-        public StudyService(IStudyCommand command , IStudyTypeQuery studyTypeQuery)
+        public StudyService(IStudyCommand command, IStudyTypeQuery studyTypeQuery, IStudyQuery query)
         {
             _command = command;
             _studyTypeQuery = studyTypeQuery;
+            _query = query;
         }
 
         public async Task<StudyResponse> CreateStudy(StudyDTO studyDTO)
@@ -41,6 +43,12 @@ namespace Application.UseCase.Services
                 StartDate = study.StartDate,
                 EndDate = study.EndDate
             };
+        }
+
+        public async Task RemoveStudy(int studyId)
+        {
+            var study = await _query.GetStudy(studyId);
+            await _command.DeleteStudy(study);
         }
     }
 }

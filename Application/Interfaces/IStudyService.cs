@@ -11,5 +11,6 @@ namespace Application.Interfaces
     {
         Task<StudyResponse> CreateStudy(StudyDTO studyDTO);
         //Task<StudyType> GetStudyTypeID(int studyTypeId);
+        Task RemoveStudy(int studyId);
     }
 }

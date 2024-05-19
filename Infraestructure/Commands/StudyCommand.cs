@@ -22,5 +22,11 @@ namespace Infraestructure.Commands
             _context.Add(study);
             await _context.SaveChangesAsync();
         }
+
+        public async Task DeleteStudy(Study study)
+        {
+            _context.Remove(study);
+            await _context.SaveChangesAsync();
+        }
     }
 }
