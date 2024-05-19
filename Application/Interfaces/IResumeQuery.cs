@@ -8,6 +8,6 @@ namespace Application.Interfaces
 {
     public interface IResumeQuery
     {
-        Resume GetResume(int resumeId);
+        Task<Resume> GetResume(int resumeId);
     }
 }

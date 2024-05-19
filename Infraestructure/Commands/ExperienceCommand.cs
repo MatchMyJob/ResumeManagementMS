@@ -22,5 +22,11 @@ namespace Infraestructure.Commands
             _context.Add(experience);
             await _context.SaveChangesAsync(); 
         }
+
+        public async Task DeleteExperience(Experience experience)
+        {
+            _context.Remove(experience);
+            await _context.SaveChangesAsync();
+        }
     }
 }

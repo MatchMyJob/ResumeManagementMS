@@ -9,5 +9,6 @@ namespace Application.Interfaces
     public interface IResumeCommand
     {
         Task InsertResume(Resume resume);
+        Task DeleteResume(Resume resume);
     }
 }

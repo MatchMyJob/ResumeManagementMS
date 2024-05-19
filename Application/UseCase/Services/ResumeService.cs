@@ -36,16 +36,22 @@ namespace Application.UseCase.Services
                 Image = resume.Image
             };
         }
-        public Task<ResumeResponse> GetResumeByID(int resumeId)
+        public async Task<ResumeResponse> GetResumeByID(int resumeId)
         {
-            var resume = _query.GetResume(resumeId);
-            return Task.FromResult(new ResumeResponse{
+            var resume = await _query.GetResume(resumeId);
+            return await Task.FromResult(new ResumeResponse{
                 ResumeId = resume.ResumeId,
                 UserId = resume.UserId,
                 Description = resume.Description,
                 MinimunSalary = resume.MinimunSalary,
                 Image = resume.Image
             });
+        }
+
+        public async Task DeleteResumeById(int resumeId)
+        {
+            var resume = await _query.GetResume(resumeId);
+            await _command.DeleteResume(resume);
         }
     }
 }

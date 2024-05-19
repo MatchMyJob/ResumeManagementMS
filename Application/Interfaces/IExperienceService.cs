@@ -9,6 +9,7 @@ namespace Application.Interfaces
 {
     public interface IExperienceService
     {
-        Task<ExperienceResponse> CreateExperience(ExperienceDTO experienceDTO);   
+        Task<ExperienceResponse> CreateExperience(ExperienceDTO experienceDTO); 
+        Task RemoveExperienceById(int experienceId);  
     }
 }

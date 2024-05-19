@@ -6,9 +6,8 @@ using Domain.Entities;
 
 namespace Application.Interfaces
 {
-    public interface IExperienceCommand
+    public interface IExperienceQuery
     {
-        Task InsertExperience(Experience experience);
-        Task DeleteExperience(Experience experience);
+        Task<Experience> GetExperience(int experienceId);
     }
 }

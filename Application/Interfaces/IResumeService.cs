@@ -11,5 +11,6 @@ namespace Application.Interfaces
     {
         Task<ResumeResponse> CreateResume(ResumeDTO resumeDTO);
         Task<ResumeResponse> GetResumeByID(int resumeId);
+        Task DeleteResumeById(int resumeId);
     }
 }

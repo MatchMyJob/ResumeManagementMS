@@ -1,4 +1,4 @@
-//using Application.DTO.Config;
+using Application.DTO.Config;
 using Application.Interfaces;
 using Application.UseCase.Services;
 using Infraestructure.Persistence;
@@ -72,14 +72,14 @@ builder.Services.AddCors(options =>
 //builder.Services.AddScoped<IUserRepository, UserRepository>();
 //builder.Services.AddScoped<IUserService, UserService>();
 
-/*var config = new AutoMapper.MapperConfiguration(
+var config = new AutoMapper.MapperConfiguration(
     options =>
     {
         options.AllowNullDestinationValues = true;
         options.AllowNullCollections = true;
         options.AddProfile(new AutoMapperProfile());
     });
-builder.Services.AddSingleton(config.CreateMapper());*/
+builder.Services.AddSingleton(config.CreateMapper());
 
 var app = builder.Build();
 

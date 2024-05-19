@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Infraestructure.Persistence;
 using Application.Interfaces;
 using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infraestructure.Querys
 {
@@ -17,10 +18,10 @@ namespace Infraestructure.Querys
             _context = context;
         }
 
-        public Resume GetResume(int resumeId)
+        public async Task<Resume> GetResume(int resumeId)
         {
-            var resume = _context.Resumes
-            .FirstOrDefault(s => s.ResumeId == resumeId);
+            var resume = await _context.Resumes
+            .FirstOrDefaultAsync(s => s.ResumeId == resumeId);
             return resume;
         }
     }
