@@ -20,9 +20,9 @@ namespace Infraestructure.Querys
 
         public async Task<Resume> GetResume(int resumeId)
         {
-            var resume = await _context.Resumes
-            .FirstOrDefaultAsync(s => s.ResumeId == resumeId);
-            return resume;
+            var resume = _context.Resumes
+            .FirstOrDefault(s => s.ResumeId == resumeId);
+            return await Task.FromResult(resume);
         }
     }
 }

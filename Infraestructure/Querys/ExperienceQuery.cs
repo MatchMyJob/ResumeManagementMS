@@ -20,9 +20,9 @@ namespace Infraestructure.Querys
 
         public async Task<Experience> GetExperience(int experienceId)
         {
-            var experience = await _context.Experiences
-            .FirstOrDefaultAsync(s => s.ExperienceId == experienceId);
-            return experience;
+            var experience = _context.Experiences
+            .FirstOrDefault(s => s.ExperienceId == experienceId);
+            return await Task.FromResult(experience);
         }
     }
 }

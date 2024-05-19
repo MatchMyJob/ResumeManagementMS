@@ -31,7 +31,7 @@ namespace API.Controllers
             return new JsonResult(result) {StatusCode = 201};
         }
 
-        [HttpDelete]
+        [HttpDelete("{id:int}")]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
@@ -39,7 +39,7 @@ namespace API.Controllers
         [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> ExperienceDelete(int id){
             var result = _service.RemoveExperienceById(id);
-            return new JsonResult(result) {StatusCode = 201};
+            return new JsonResult(result) {StatusCode = 200};
         }
     }
 }

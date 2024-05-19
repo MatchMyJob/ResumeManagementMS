@@ -21,9 +21,9 @@ namespace Infraestructure.Querys
 
         public async Task<Study> GetStudy(int studyId)
         {
-            var study = await _context.Studies
-            .FirstOrDefaultAsync(s => s.StudyId == studyId);
-            return study;
+            var study = _context.Studies
+            .FirstOrDefault(s => s.StudyId == studyId);
+            return await Task.FromResult(study);
         
         }
     }
