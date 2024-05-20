@@ -1,14 +1,17 @@
+﻿using Application.DTO.Request;
+using Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using Domain.Entities;
 
 namespace Application.Interfaces
 {
     public interface IStudyCommand
     {
-        Task InsertStudy(Study study);
-        Task DeleteStudy(Study study);
+        Task<Study> InsertStudy(Study study);
+        Task<Study> UpdateStudy(int StudyId, StudyRequest request);
+        Task<Study> DeleteStudy(int id);
     }
 }

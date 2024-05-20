@@ -1,13 +1,15 @@
+﻿using Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using Domain.Entities;
 
 namespace Application.Interfaces
 {
     public interface IStudyTypeQuery
     {
-        StudyType GetStudyTypeById(int studyTypeId);
+        Task<StudyType> GetStudyTypeById(int Id);
+        Task<List<StudyType>> GetAllStudyTypes(int pagedNumber, int pagedSize);
     }
 }

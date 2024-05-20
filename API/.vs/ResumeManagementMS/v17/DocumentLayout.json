@@ -1,0 +1,386 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\infraestructure\\command\\resumecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\application\\usecase\\services\\resumeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\infraestructure\\migrations\\20240519133951_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6EBE63-DA8C-4D14-B6C9-55B4F621513E}|..\\Domain\\Domain.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\domain\\entities\\resume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\application\\usecase\\services\\studyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\application\\interfaces\\istudyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\application\\interfaces\\iresumeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\api\\controllers\\resumecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|solutionrelative:controllers\\resumecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\application\\interfaces\\iresumecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\api\\controllers\\studycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|solutionrelative:controllers\\studycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\infraestructure\\query\\resumequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\application\\dto\\response\\resumeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\application\\interfaces\\iresumequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\application\\dto\\response\\skillresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\application\\usecase\\services\\studytypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|d:\\tami\\unaj\\proyecto de software\\resumemanagementms\\resumemanagementms\\api\\controllers\\resumeskillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|solutionrelative:controllers\\resumeskillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Domain\\Entities\\Resume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Infraestructure\\Command\\StudyCommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Application\\UseCase\\Services\\StudyService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Application\\UseCase\\Services\\ResumeService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Infraestructure\\Query\\ResumeQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Application\\DTO\\Response\\ResumeResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResumeCommand.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Infraestructure\\Command\\ResumeCommand.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Command\\ResumeCommand.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Infraestructure\\Command\\ResumeCommand.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Command\\ResumeCommand.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAiwBsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T21:56:11.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResumeService.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\UseCase\\Services\\ResumeService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\UseCase\\Services\\ResumeService.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\UseCase\\Services\\ResumeService.cs",
+              "RelativeToolTip": "..\\Application\\UseCase\\Services\\ResumeService.cs",
+              "ViewState": "AQIAAHkAAAAAAAAAAAAqwJEAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T21:36:51.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IResumeCommand.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\Interfaces\\IResumeCommand.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\IResumeCommand.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\Interfaces\\IResumeCommand.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\IResumeCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T21:35:22.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IResumeQuery.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\Interfaces\\IResumeQuery.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\IResumeQuery.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\Interfaces\\IResumeQuery.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\IResumeQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T21:22:28.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IStudyService.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\Interfaces\\IStudyService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\IStudyService.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\Interfaces\\IStudyService.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\IStudyService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T21:22:14.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IResumeService.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\Interfaces\\IResumeService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\IResumeService.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\Interfaces\\IResumeService.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\IResumeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T21:21:47.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ResumeController.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\API\\Controllers\\ResumeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ResumeController.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\API\\Controllers\\ResumeController.cs",
+              "RelativeToolTip": "Controllers\\ResumeController.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAIwEcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T12:58:50.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAYwFUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T13:21:06.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StudyTypeService.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\UseCase\\Services\\StudyTypeService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\UseCase\\Services\\StudyTypeService.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\UseCase\\Services\\StudyTypeService.cs",
+              "RelativeToolTip": "..\\Application\\UseCase\\Services\\StudyTypeService.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T21:58:47.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ResumeResponse.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\DTO\\Response\\ResumeResponse.cs",
+              "RelativeDocumentMoniker": "..\\Application\\DTO\\Response\\ResumeResponse.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\DTO\\Response\\ResumeResponse.cs",
+              "RelativeToolTip": "..\\Application\\DTO\\Response\\ResumeResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T22:07:56.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Resume.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Domain\\Entities\\Resume.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Resume.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Domain\\Entities\\Resume.cs",
+              "RelativeToolTip": "..\\Domain\\Entities\\Resume.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAwwAsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T22:30:37.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20240519133951_2.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Infraestructure\\Migrations\\20240519133951_2.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Migrations\\20240519133951_2.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Infraestructure\\Migrations\\20240519133951_2.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Migrations\\20240519133951_2.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAswCMAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T13:39:51.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudyService.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\UseCase\\Services\\StudyService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\UseCase\\Services\\StudyService.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\UseCase\\Services\\StudyService.cs",
+              "RelativeToolTip": "..\\Application\\UseCase\\Services\\StudyService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAADYAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T21:40:18.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ResumeQuery.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Infraestructure\\Query\\ResumeQuery.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Query\\ResumeQuery.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Infraestructure\\Query\\ResumeQuery.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Query\\ResumeQuery.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T21:55:57.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SkillResponse.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\DTO\\Response\\SkillResponse.cs",
+              "RelativeDocumentMoniker": "..\\Application\\DTO\\Response\\SkillResponse.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\Application\\DTO\\Response\\SkillResponse.cs",
+              "RelativeToolTip": "..\\Application\\DTO\\Response\\SkillResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T22:08:25.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ResumeSkillController.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\API\\Controllers\\ResumeSkillController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ResumeSkillController.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\API\\Controllers\\ResumeSkillController.cs",
+              "RelativeToolTip": "Controllers\\ResumeSkillController.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAAD8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T21:17:33.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StudyController.cs",
+              "DocumentMoniker": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\API\\Controllers\\StudyController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudyController.cs",
+              "ToolTip": "D:\\Tami\\UNAJ\\Proyecto de software\\ResumeManagementMS\\ResumeManagementMS\\API\\Controllers\\StudyController.cs",
+              "RelativeToolTip": "Controllers\\StudyController.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAwwBIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T13:36:26.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Resume.cs",
+              "DocumentMoniker": "C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Domain\\Entities\\Resume.cs",
+              "ToolTip": "C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Domain\\Entities\\Resume.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T13:16:53.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "StudyCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Infraestructure\\Command\\StudyCommand.cs",
+              "ToolTip": "C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Infraestructure\\Command\\StudyCommand.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAgwEgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T13:14:41.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "StudyService.cs",
+              "DocumentMoniker": "C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Application\\UseCase\\Services\\StudyService.cs",
+              "ToolTip": "C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Application\\UseCase\\Services\\StudyService.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAgwGgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T13:10:35.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ResumeService.cs",
+              "DocumentMoniker": "C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Application\\UseCase\\Services\\ResumeService.cs",
+              "ToolTip": "C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Application\\UseCase\\Services\\ResumeService.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAiwE4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T00:45:03.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ResumeQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Infraestructure\\Query\\ResumeQuery.cs",
+              "ToolTip": "C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Infraestructure\\Query\\ResumeQuery.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T13:05:40.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ResumeResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Application\\DTO\\Response\\ResumeResponse.cs",
+              "ToolTip": "C:\\Users\\Giuliano\\Desktop\\ResumeManagementMS\\ResumeManagementMS\\Application\\DTO\\Response\\ResumeResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T00:45:53.243Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

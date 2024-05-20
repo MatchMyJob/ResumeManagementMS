@@ -32,67 +32,91 @@ namespace Infraestructure.Migrations
 
                     b.Property<string>("CompanyName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("JobTitle")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ResumeId")
-                        .HasColumnType("int");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("ExperienceId");
 
-                    b.HasIndex("ResumeId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Experience", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Resume", b =>
                 {
-                    b.Property<int>("ResumeId")
+                    b.Property<Guid>("UserId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ResumeId"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("Image")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
-                    b.Property<int>("MinimunSalary")
+                    b.Property<int>("MinimumSalary")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("ResumeId");
+                    b.HasKey("UserId");
 
                     b.ToTable("Resume", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = new Guid("c5aa74a3-416d-411a-989e-b06c6ba067b6"),
+                            Description = "Cv1",
+                            Image = "...",
+                            MinimumSalary = 100
+                        },
+                        new
+                        {
+                            UserId = new Guid("13e82a47-9bfe-4170-b94e-8ad3cbb13086"),
+                            Description = "Cv2",
+                            Image = "...",
+                            MinimumSalary = 300
+                        },
+                        new
+                        {
+                            UserId = new Guid("189e1d58-3c3d-4b45-9156-9bf898cecec9"),
+                            Description = "Cv3",
+                            Image = "...",
+                            MinimumSalary = 1000
+                        });
                 });
 
             modelBuilder.Entity("Domain.Entities.ResumeSkill", b =>
                 {
-                    b.Property<int>("ResumeId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("SkillId")
                         .HasColumnType("int");
 
-                    b.HasKey("ResumeId", "SkillId");
+                    b.HasKey("UserId", "SkillId");
 
                     b.HasIndex("SkillId");
 
@@ -109,7 +133,8 @@ namespace Infraestructure.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("SkillId");
 
@@ -315,6 +340,481 @@ namespace Infraestructure.Migrations
                         {
                             SkillId = 40,
                             Name = "PyTorch"
+                        },
+                        new
+                        {
+                            SkillId = 41,
+                            Name = "Adobe Photoshop"
+                        },
+                        new
+                        {
+                            SkillId = 42,
+                            Name = "Adobe Illustrator"
+                        },
+                        new
+                        {
+                            SkillId = 43,
+                            Name = "Adobe InDesign"
+                        },
+                        new
+                        {
+                            SkillId = 44,
+                            Name = "Sketch"
+                        },
+                        new
+                        {
+                            SkillId = 45,
+                            Name = "CorelDRAW"
+                        },
+                        new
+                        {
+                            SkillId = 46,
+                            Name = "AutoCAD"
+                        },
+                        new
+                        {
+                            SkillId = 47,
+                            Name = "Revit"
+                        },
+                        new
+                        {
+                            SkillId = 48,
+                            Name = "Legal Research"
+                        },
+                        new
+                        {
+                            SkillId = 49,
+                            Name = "Litigation"
+                        },
+                        new
+                        {
+                            SkillId = 50,
+                            Name = "Contract Drafting"
+                        },
+                        new
+                        {
+                            SkillId = 51,
+                            Name = "Microsoft Office"
+                        },
+                        new
+                        {
+                            SkillId = 52,
+                            Name = "Excel"
+                        },
+                        new
+                        {
+                            SkillId = 53,
+                            Name = "Word"
+                        },
+                        new
+                        {
+                            SkillId = 54,
+                            Name = "PowerPoint"
+                        },
+                        new
+                        {
+                            SkillId = 55,
+                            Name = "Outlook"
+                        },
+                        new
+                        {
+                            SkillId = 56,
+                            Name = "Adobe Premiere Pro"
+                        },
+                        new
+                        {
+                            SkillId = 57,
+                            Name = "Final Cut Pro"
+                        },
+                        new
+                        {
+                            SkillId = 58,
+                            Name = "Avid Media Composer"
+                        },
+                        new
+                        {
+                            SkillId = 59,
+                            Name = "Blender"
+                        },
+                        new
+                        {
+                            SkillId = 60,
+                            Name = "Maya"
+                        },
+                        new
+                        {
+                            SkillId = 61,
+                            Name = "3ds Max"
+                        },
+                        new
+                        {
+                            SkillId = 62,
+                            Name = "ZBrush"
+                        },
+                        new
+                        {
+                            SkillId = 63,
+                            Name = "SketchUp"
+                        },
+                        new
+                        {
+                            SkillId = 64,
+                            Name = "Illustration"
+                        },
+                        new
+                        {
+                            SkillId = 65,
+                            Name = "Typography"
+                        },
+                        new
+                        {
+                            SkillId = 66,
+                            Name = "Digital Painting"
+                        },
+                        new
+                        {
+                            SkillId = 67,
+                            Name = "User Experience (UX) Design"
+                        },
+                        new
+                        {
+                            SkillId = 68,
+                            Name = "User Interface (UI) Design"
+                        },
+                        new
+                        {
+                            SkillId = 69,
+                            Name = "Wireframing"
+                        },
+                        new
+                        {
+                            SkillId = 70,
+                            Name = "Prototyping"
+                        },
+                        new
+                        {
+                            SkillId = 71,
+                            Name = "Information Architecture"
+                        },
+                        new
+                        {
+                            SkillId = 72,
+                            Name = "Interaction Design"
+                        },
+                        new
+                        {
+                            SkillId = 73,
+                            Name = "Brand Identity"
+                        },
+                        new
+                        {
+                            SkillId = 74,
+                            Name = "Print Design"
+                        },
+                        new
+                        {
+                            SkillId = 75,
+                            Name = "Packaging Design"
+                        },
+                        new
+                        {
+                            SkillId = 76,
+                            Name = "Logo Design"
+                        },
+                        new
+                        {
+                            SkillId = 77,
+                            Name = "Motion Graphics"
+                        },
+                        new
+                        {
+                            SkillId = 78,
+                            Name = "2D Animation"
+                        },
+                        new
+                        {
+                            SkillId = 79,
+                            Name = "3D Animation"
+                        },
+                        new
+                        {
+                            SkillId = 80,
+                            Name = "Character Animation"
+                        },
+                        new
+                        {
+                            SkillId = 81,
+                            Name = "Legal Writing"
+                        },
+                        new
+                        {
+                            SkillId = 82,
+                            Name = "Corporate Law"
+                        },
+                        new
+                        {
+                            SkillId = 83,
+                            Name = "Intellectual Property Law"
+                        },
+                        new
+                        {
+                            SkillId = 84,
+                            Name = "Family Law"
+                        },
+                        new
+                        {
+                            SkillId = 85,
+                            Name = "Environmental Law"
+                        },
+                        new
+                        {
+                            SkillId = 86,
+                            Name = "Immigration Law"
+                        },
+                        new
+                        {
+                            SkillId = 87,
+                            Name = "Real Estate Law"
+                        },
+                        new
+                        {
+                            SkillId = 88,
+                            Name = "Bankruptcy Law"
+                        },
+                        new
+                        {
+                            SkillId = 89,
+                            Name = "Criminal Law"
+                        },
+                        new
+                        {
+                            SkillId = 90,
+                            Name = "Health Law"
+                        },
+                        new
+                        {
+                            SkillId = 91,
+                            Name = "Tax Law"
+                        },
+                        new
+                        {
+                            SkillId = 92,
+                            Name = "International Law"
+                        },
+                        new
+                        {
+                            SkillId = 93,
+                            Name = "Administrative Law"
+                        },
+                        new
+                        {
+                            SkillId = 94,
+                            Name = "Legal Compliance"
+                        },
+                        new
+                        {
+                            SkillId = 95,
+                            Name = "Legal Consulting"
+                        },
+                        new
+                        {
+                            SkillId = 96,
+                            Name = "Legal Research"
+                        },
+                        new
+                        {
+                            SkillId = 97,
+                            Name = "Legal Writing"
+                        },
+                        new
+                        {
+                            SkillId = 98,
+                            Name = "Legal Analysis"
+                        },
+                        new
+                        {
+                            SkillId = 99,
+                            Name = "Legal Documentation"
+                        },
+                        new
+                        {
+                            SkillId = 100,
+                            Name = "Data Entry"
+                        },
+                        new
+                        {
+                            SkillId = 101,
+                            Name = "Typing"
+                        },
+                        new
+                        {
+                            SkillId = 102,
+                            Name = "Proofreading"
+                        },
+                        new
+                        {
+                            SkillId = 103,
+                            Name = "Document Formatting"
+                        },
+                        new
+                        {
+                            SkillId = 104,
+                            Name = "Transcription"
+                        },
+                        new
+                        {
+                            SkillId = 105,
+                            Name = "Virtual Assistance"
+                        },
+                        new
+                        {
+                            SkillId = 106,
+                            Name = "Customer Service"
+                        },
+                        new
+                        {
+                            SkillId = 107,
+                            Name = "Email Handling"
+                        },
+                        new
+                        {
+                            SkillId = 108,
+                            Name = "Calendar Management"
+                        },
+                        new
+                        {
+                            SkillId = 109,
+                            Name = "Travel Arrangements"
+                        },
+                        new
+                        {
+                            SkillId = 110,
+                            Name = "Event Planning"
+                        },
+                        new
+                        {
+                            SkillId = 111,
+                            Name = "Research"
+                        },
+                        new
+                        {
+                            SkillId = 112,
+                            Name = "Social Media Management"
+                        },
+                        new
+                        {
+                            SkillId = 113,
+                            Name = "Content Creation"
+                        },
+                        new
+                        {
+                            SkillId = 114,
+                            Name = "Digital Marketing"
+                        },
+                        new
+                        {
+                            SkillId = 115,
+                            Name = "Search Engine Optimization (SEO)"
+                        },
+                        new
+                        {
+                            SkillId = 116,
+                            Name = "Search Engine Marketing (SEM)"
+                        },
+                        new
+                        {
+                            SkillId = 117,
+                            Name = "Email Marketing"
+                        },
+                        new
+                        {
+                            SkillId = 118,
+                            Name = "Graphic Design"
+                        },
+                        new
+                        {
+                            SkillId = 119,
+                            Name = "Web Design"
+                        },
+                        new
+                        {
+                            SkillId = 120,
+                            Name = "Video Editing"
+                        },
+                        new
+                        {
+                            SkillId = 121,
+                            Name = "Audio Editing"
+                        },
+                        new
+                        {
+                            SkillId = 122,
+                            Name = "Photography"
+                        },
+                        new
+                        {
+                            SkillId = 123,
+                            Name = "Videography"
+                        },
+                        new
+                        {
+                            SkillId = 124,
+                            Name = "Photo Editing"
+                        },
+                        new
+                        {
+                            SkillId = 125,
+                            Name = "Image Retouching"
+                        },
+                        new
+                        {
+                            SkillId = 126,
+                            Name = "Color Grading"
+                        },
+                        new
+                        {
+                            SkillId = 127,
+                            Name = "Storyboarding"
+                        },
+                        new
+                        {
+                            SkillId = 128,
+                            Name = "Scriptwriting"
+                        },
+                        new
+                        {
+                            SkillId = 129,
+                            Name = "Creative Writing"
+                        },
+                        new
+                        {
+                            SkillId = 130,
+                            Name = "Copywriting"
+                        },
+                        new
+                        {
+                            SkillId = 131,
+                            Name = "Technical Writing"
+                        },
+                        new
+                        {
+                            SkillId = 132,
+                            Name = "Editing"
+                        },
+                        new
+                        {
+                            SkillId = 133,
+                            Name = "Translation"
+                        },
+                        new
+                        {
+                            SkillId = 134,
+                            Name = "Localization"
+                        },
+                        new
+                        {
+                            SkillId = 135,
+                            Name = "Subtitling"
                         });
                 });
 
@@ -328,25 +828,26 @@ namespace Infraestructure.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("ResumeId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("StartDate")
+                    b.Property<DateTime>("StarDate")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("StudyTypeId")
                         .HasColumnType("int");
 
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("StudyId");
 
-                    b.HasIndex("ResumeId");
-
                     b.HasIndex("StudyTypeId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Study", (string)null);
                 });
@@ -361,7 +862,8 @@ namespace Infraestructure.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("StudyTypeId");
 
@@ -371,12 +873,12 @@ namespace Infraestructure.Migrations
                         new
                         {
                             StudyTypeId = 1,
-                            Name = "Secundaria basica"
+                            Name = "Primaria"
                         },
                         new
                         {
                             StudyTypeId = 2,
-                            Name = "Secundaria superior"
+                            Name = "Secundaria"
                         },
                         new
                         {
@@ -387,70 +889,90 @@ namespace Infraestructure.Migrations
                         {
                             StudyTypeId = 4,
                             Name = "Universitario"
+                        },
+                        new
+                        {
+                            StudyTypeId = 5,
+                            Name = "Posgrado"
+                        },
+                        new
+                        {
+                            StudyTypeId = 6,
+                            Name = "Master"
+                        },
+                        new
+                        {
+                            StudyTypeId = 7,
+                            Name = "Doctorado"
+                        },
+                        new
+                        {
+                            StudyTypeId = 8,
+                            Name = "Curso"
                         });
                 });
 
             modelBuilder.Entity("Domain.Entities.Experience", b =>
                 {
-                    b.HasOne("Domain.Entities.Resume", "Resume")
+                    b.HasOne("Domain.Entities.Resume", "resume")
                         .WithMany("ExperienceList")
-                        .HasForeignKey("ResumeId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Resume");
+                    b.Navigation("resume");
                 });
 
             modelBuilder.Entity("Domain.Entities.ResumeSkill", b =>
                 {
-                    b.HasOne("Domain.Entities.Resume", "Resume")
-                        .WithMany("ResumeSkills")
-                        .HasForeignKey("ResumeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Domain.Entities.Skill", "Skill")
-                        .WithMany("ResumeSkills")
+                    b.HasOne("Domain.Entities.Skill", "skill")
+                        .WithMany("ResumeSkill")
                         .HasForeignKey("SkillId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Resume");
+                    b.HasOne("Domain.Entities.Resume", "resume")
+                        .WithMany("ResumeSkillList")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("Skill");
+                    b.Navigation("resume");
+
+                    b.Navigation("skill");
                 });
 
             modelBuilder.Entity("Domain.Entities.Study", b =>
                 {
-                    b.HasOne("Domain.Entities.Resume", "Resume")
-                        .WithMany("StudyList")
-                        .HasForeignKey("ResumeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Domain.Entities.StudyType", "StudyType")
+                    b.HasOne("Domain.Entities.StudyType", "studyType")
                         .WithMany("StudyList")
                         .HasForeignKey("StudyTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Resume");
+                    b.HasOne("Domain.Entities.Resume", "resume")
+                        .WithMany("StudyList")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("StudyType");
+                    b.Navigation("resume");
+
+                    b.Navigation("studyType");
                 });
 
             modelBuilder.Entity("Domain.Entities.Resume", b =>
                 {
                     b.Navigation("ExperienceList");
 
-                    b.Navigation("ResumeSkills");
+                    b.Navigation("ResumeSkillList");
 
                     b.Navigation("StudyList");
                 });
 
             modelBuilder.Entity("Domain.Entities.Skill", b =>
                 {
-                    b.Navigation("ResumeSkills");
+                    b.Navigation("ResumeSkill");
                 });
 
             modelBuilder.Entity("Domain.Entities.StudyType", b =>

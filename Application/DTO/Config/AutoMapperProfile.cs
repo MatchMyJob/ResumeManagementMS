@@ -1,5 +1,5 @@
 ﻿using Application.DTO.Error;
-using Application.DTO;
+using Application.DTO.Request;
 using Application.DTO.Response;
 using AutoMapper;
 using Domain.Entities;
@@ -10,10 +10,18 @@ namespace Application.DTO.Config
     {
         public AutoMapperProfile()
         {
-            /*CreateMap<UserRequest, User>().ReverseMap();
-            CreateMap<UserRequest, UserResponse>().ReverseMap();
-            CreateMap<User, UserResponse>().ReverseMap();
-            CreateMap<HTTPError, HTTPResponse<string>>().ReverseMap();*/
+            CreateMap<Resume, ResumeRequest>().ReverseMap();
+            CreateMap<Resume, ResumeResponse>().ReverseMap();
+            CreateMap<ResumeSkill, ResumeSkillRequest>().ReverseMap();
+            CreateMap<ResumeSkill, SkillResponse>().ReverseMap();
+            CreateMap<Experience, ExperienceRequest>().ReverseMap();
+            CreateMap<Experience, ExperienceResponse>().ReverseMap();
+            CreateMap<Skill, SkillResponse>().ReverseMap();
+            CreateMap<SkillResponse, SkillResponsePaged>().ReverseMap();
+            CreateMap<Study, StudyResponse>().ReverseMap();
+            CreateMap<Study, StudyRequest>().ReverseMap();
+            CreateMap<StudyType, StudyTypeResponse>().ReverseMap();
+
         }
     }
 }

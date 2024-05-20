@@ -1,13 +1,13 @@
 using Application.DTO.Config;
 using Application.Interfaces;
 using Application.UseCase.Services;
+using Infraestructure.Command;
 using Infraestructure.Persistence;
-using Infraestructure.Commands;
+using Infraestructure.Query;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
-using Infraestructure.Querys;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,16 +42,22 @@ var connectionString = builder.Configuration["ConnectionString"];
 
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connectionString));
 
-builder.Services.AddScoped<IResumeCommand , ResumeCommand>();
-builder.Services.AddScoped<IResumeService , ResumeService>();
-builder.Services.AddScoped<IResumeQuery , ResumeQuery>();
+builder.Services.AddScoped<IStudyTypeService, StudyTypeService>();
+builder.Services.AddScoped<IStudyTypeQuery, StudyTypeQuery>();
+builder.Services.AddScoped<IStudyService, StudyService>();
+builder.Services.AddScoped<IStudyCommand, StudyCommand>();
+builder.Services.AddScoped<IStudyQuery, StudyQuery>();
+builder.Services.AddScoped<IResumeService, ResumeService>();
+builder.Services.AddScoped<IResumeQuery, ResumeQuery>();
+builder.Services.AddScoped<IResumeCommand, ResumeCommand>();
+builder.Services.AddScoped<ISkillQuery, SkillQuery>();
+builder.Services.AddScoped<ISkillService, SkillService>();
+builder.Services.AddScoped<IResumeSkillCommand, ResumeSkillCommand>();
+builder.Services.AddScoped<IResumeSkillService, ResumeSkillService>();
 builder.Services.AddScoped<IExperienceCommand , ExperienceCommand>();
 builder.Services.AddScoped<IExperienceQuery , ExperienceQuery>();
 builder.Services.AddScoped<IExperienceService , ExperienceService>();
-builder.Services.AddScoped<IStudyTypeQuery , StudyTypeQuery>();
-builder.Services.AddScoped<IStudyCommand , StudyCommand>();
-builder.Services.AddScoped<IStudyQuery , StudyQuery>();
-builder.Services.AddScoped<IStudyService , StudyService>();
+
 
 
 
@@ -70,9 +76,6 @@ builder.Services.AddCors(options =>
     });
 });
 
-
-//builder.Services.AddScoped<IUserRepository, UserRepository>();
-//builder.Services.AddScoped<IUserService, UserService>();
 
 var config = new AutoMapper.MapperConfiguration(
     options =>

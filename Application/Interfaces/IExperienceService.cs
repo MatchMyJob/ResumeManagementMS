@@ -1,15 +1,17 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using Domain.Entities;
-using Application.DTO;
+using Application.DTO.Request;
+using Application.DTO.Response;
 
 namespace Application.Interfaces
 {
     public interface IExperienceService
     {
-        Task<ExperienceResponse> CreateExperience(ExperienceDTO experienceDTO); 
-        Task RemoveExperienceById(int experienceId);  
+        Task<ExperienceResponse> RegisterExperience(ExperienceRequest request);
+        Task<ExperienceResponse> ModExperience(int Id, ExperienceRequest request);
+        Task<ExperienceResponse> DeleteExperience(int Id);
     }
 }

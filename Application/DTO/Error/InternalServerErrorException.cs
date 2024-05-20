@@ -1,10 +1,14 @@
-﻿using System.Net;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Application.DTO.Error
 {
-    public class InternalServerErrorException : HTTPError
+    public class InternalServerErrorException : Exception
     {
-        public InternalServerErrorException(string message) : base((HttpStatusCode)500, "Internal Server Error", message)
+        public InternalServerErrorException(string message) : base(message)
         {
         }
     }

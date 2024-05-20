@@ -1,71 +1,94 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Application.Interfaces;
-using Application.DTO;
+﻿using Application.DTO.Error;
+using Application.DTO.Request;
 using Application.DTO.Response;
-using Application.DTO.Error;
-using Application.DTO.Pagination;
-using AutoMapper;
-using System.Net;
-
-
+using Application.Interfaces;
+using Application.UseCase.Services;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class StudyController : ControllerBase
     {
-        private readonly IStudyService _service;
-        private readonly IMapper _mapper;
-        private HTTPResponse<Object> _response;
-
-        public StudyController(IStudyService service)
+        private readonly IStudyService _studyService;
+        public StudyController(IStudyService studyService)
         {
-            _service = service;
+            _studyService = studyService;
         }
-
         [HttpPost]
-        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
-        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
-        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> StudyPost(StudyDTO studyRequest)
+        [ProducesResponseType(typeof(StudyResponse), 201)]
+        [ProducesResponseType(typeof(ApiError), 400)]
+        [ProducesResponseType(typeof(ApiError), 409)]
+        [ProducesResponseType(typeof(ApiError), 500)]
+        public async Task<IActionResult> RegisterStudy(StudyRequest request)
         {
-            var result = await _service.CreateStudy(studyRequest);
-            return new JsonResult(result) { StatusCode = 200 };
-        }
 
-        [HttpDelete("{id:int}")]
-        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status404NotFound)]
-        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status409Conflict)]
-        [ProducesResponseType(typeof(HTTPResponse<string>), StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> StudyDelete(int id)
+            try
+            {
+                var result = await _studyService.RegisterStudy(request);
+                return new JsonResult(result) { StatusCode = 201 };
+            }
+            catch (ExceptionSintaxError ex)
+            {
+                return new JsonResult(new ApiError { message = ex.Message }) { StatusCode = 400 };
+            }
+            catch (ExceptionConflict ex)
+            {
+                return new JsonResult(new ApiError { message = ex.Message }) { StatusCode = 409 };
+            }
+            catch (InternalServerErrorException ex)
+            {
+                return new JsonResult(new ApiError { message = ex.Message }) { StatusCode = 500 };
+            }
+        }
+        [HttpPut("{id}")]
+        [ProducesResponseType(typeof(StudyResponse), 200)]
+        [ProducesResponseType(typeof(ApiError), 400)]
+        [ProducesResponseType(typeof(ApiError), 404)]
+        [ProducesResponseType(typeof(ApiError), 500)]
+        public async Task<IActionResult> ModStudy(int id, StudyRequest request)
         {
             try
             {
-                //var result = _service.RemoveStudy(id);
-                //return new JsonResult(result) { StatusCode = 200 };
-                await _service.RemoveStudy(id);
-                _response.StatusCode = (HttpStatusCode)200;
-                _response.Status = "OK";
-                return new JsonResult(_response) { StatusCode = 200 };
+                var result = await _studyService.ModStudy(id, request);
+                return new JsonResult(result) { StatusCode = 200 };
             }
-            catch (Exception e)
+            catch (ExceptionSintaxError ex)
             {
-                if (e is HTTPError)
-                {
-                    return new JsonResult(_mapper.Map<HTTPResponse<string>>(e)) { StatusCode = (int)((HTTPError)e).StatusCode };
-                }
-                return new JsonResult(_mapper.Map<HTTPResponse<string>>(new InternalServerErrorException("A server error has occurred."))) { StatusCode = 500 };
+                return new JsonResult(new ApiError { message = ex.Message }) { StatusCode = 400 };
             }
+            catch (ExceptionNotFound ex)
+            {
+                return new JsonResult(new ApiError { message = ex.Message }) { StatusCode = 404 };
+            }
+            catch (InternalServerErrorException ex)
+            {
+                return new JsonResult(new ApiError { message = ex.Message }) { StatusCode = 500 };
+            }
+        }       
+        [HttpDelete("{id}")]
+        [ProducesResponseType(typeof(ApiError), 200)]
+        [ProducesResponseType(typeof(ApiError), 404)]
+        [ProducesResponseType(typeof(ApiError), 500)]
+        public async Task<IActionResult> DeleteStudy(int id)
+        {
 
+            try
+            {
+                var result = await _studyService.DeleteStudy(id);
+                return new JsonResult(result) { StatusCode = 200 };
+            }
+            catch (ExceptionNotFound ex)
+            {
+                return new JsonResult(new ApiError { message = ex.Message }) { StatusCode = 404 };
+            }
+            catch (InternalServerErrorException ex)
+            {
+                return new JsonResult(new ApiError { message = ex.Message }) { StatusCode = 500 };
+            }
         }
+
     }
 }
