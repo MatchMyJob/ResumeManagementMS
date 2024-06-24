@@ -1,0 +1,239 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\resumemanagementms\\application\\usecase\\services\\resumeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\resumemanagementms\\infraestructure\\query\\skillquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\resumemanagementms\\infraestructure\\entityconfig\\resumeskillconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{866AD143-6BBA-407C-9AE2-C9648AFAB9D8}|..\\Application\\Application.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\resumemanagementms\\application\\dto\\config\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\resumemanagementms\\api\\controllers\\resumeskillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|solutionrelative:controllers\\resumeskillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\resumemanagementms\\api\\controllers\\resumecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|solutionrelative:controllers\\resumecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\resumemanagementms\\infraestructure\\data\\resumedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\Migrations\\20240624043935_1.2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\resumemanagementms\\infraestructure\\entityconfig\\studyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\resumemanagementms\\infraestructure\\entityconfig\\studytypeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\resumemanagementms\\infraestructure\\entityconfig\\experienceconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD3EA04B-CC36-4361-812D-E99619C6278F}|..\\Infraestructure\\Infraestructure.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\resumemanagementms\\infraestructure\\entityconfig\\resumeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|d:\\ingenier\u00EDa informatica\\1 - proyecto de software\\proyecto integrador\\resumemanagementms\\api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B0B5CE73-BFBF-4AA6-A800-B5A051694BB3}|API.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SkillQuery.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\Query\\SkillQuery.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Query\\SkillQuery.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\Query\\SkillQuery.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Query\\SkillQuery.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAjwCMAAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:56:24.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Application\\DTO\\Config\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "..\\Application\\DTO\\Config\\AutoMapperProfile.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Application\\DTO\\Config\\AutoMapperProfile.cs",
+              "RelativeToolTip": "..\\Application\\DTO\\Config\\AutoMapperProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:39:55.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResumeService.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Application\\UseCase\\Services\\ResumeService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\UseCase\\Services\\ResumeService.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Application\\UseCase\\Services\\ResumeService.cs",
+              "RelativeToolTip": "..\\Application\\UseCase\\Services\\ResumeService.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAcwCMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:32:12.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ResumeSkillController.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\API\\Controllers\\ResumeSkillController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ResumeSkillController.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\API\\Controllers\\ResumeSkillController.cs",
+              "RelativeToolTip": "Controllers\\ResumeSkillController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACAAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:29:41.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResumeSkillConfig.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\EntityConfig\\ResumeSkillConfig.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\EntityConfig\\ResumeSkillConfig.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\EntityConfig\\ResumeSkillConfig.cs",
+              "RelativeToolTip": "..\\Infraestructure\\EntityConfig\\ResumeSkillConfig.cs",
+              "ViewState": "AQIAAAQBAAAAAAAAAAAjwBoBAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T08:56:29.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResumeData.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\Data\\ResumeData.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Data\\ResumeData.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\Data\\ResumeData.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Data\\ResumeData.cs",
+              "ViewState": "AQIAAC8CAAAAAAAAAAAAAEICAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T08:21:41.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ResumeController.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\API\\Controllers\\ResumeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ResumeController.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\API\\Controllers\\ResumeController.cs",
+              "RelativeToolTip": "Controllers\\ResumeController.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAcwIYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T05:06:57.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20240624043935_1.2.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\Migrations\\20240624043935_1.2.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\Migrations\\20240624043935_1.2.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\Migrations\\20240624043935_1.2.cs",
+              "RelativeToolTip": "..\\Infraestructure\\Migrations\\20240624043935_1.2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T04:39:36.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StudyConfig.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\EntityConfig\\StudyConfig.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\EntityConfig\\StudyConfig.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\EntityConfig\\StudyConfig.cs",
+              "RelativeToolTip": "..\\Infraestructure\\EntityConfig\\StudyConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T04:38:55.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StudyTypeConfig.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\EntityConfig\\StudyTypeConfig.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\EntityConfig\\StudyTypeConfig.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\EntityConfig\\StudyTypeConfig.cs",
+              "RelativeToolTip": "..\\Infraestructure\\EntityConfig\\StudyTypeConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T04:38:44.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ExperienceConfig.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\EntityConfig\\ExperienceConfig.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\EntityConfig\\ExperienceConfig.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\EntityConfig\\ExperienceConfig.cs",
+              "RelativeToolTip": "..\\Infraestructure\\EntityConfig\\ExperienceConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T04:38:09.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ResumeConfig.cs",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\EntityConfig\\ResumeConfig.cs",
+              "RelativeDocumentMoniker": "..\\Infraestructure\\EntityConfig\\ResumeConfig.cs",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\Infraestructure\\EntityConfig\\ResumeConfig.cs",
+              "RelativeToolTip": "..\\Infraestructure\\EntityConfig\\ResumeConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T02:03:53.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "D:\\Ingenier\u00EDa Informatica\\1 - Proyecto de Software\\Proyecto integrador\\ResumeManagementMS\\API\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-24T01:45:09.373Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
